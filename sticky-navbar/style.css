@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: rgb(49, 88, 72);
+  margin: 0;
+}
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color:  rgb(49, 88, 72);
+  transition: all 0.5s ease-in-out;
+}
+nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+.logo a {
+  font-size: 2rem;
+  color: #fff;
+  padding: 0.5rem;
+  list-style: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: #fff;
+}
+nav ul li {
+  padding: 0 1rem;
+}
+nav ul li a {
+  color: #fff;
+  transition: all 0.5s;
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+}
+h1 {
+  font-size: 4rem;
+  padding-bottom: 1.5rem;
+}
+.info {
+  font-size: 1.5rem;
+}
+.hero {
+  background-image: url(img/bjorklov.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20px;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+section h2 {
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+section p {
+  justify-content: center;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 3rem;
+}
