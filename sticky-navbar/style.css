@@ -31,7 +31,7 @@ nav .container {
   font-size: 2rem;
   color: #fff;
   padding: 0.5rem;
-  list-style: none;
+  text-decoration: none;
 }
 nav ul {
   display: flex;
