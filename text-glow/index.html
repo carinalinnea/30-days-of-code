@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: rgb(34, 34, 34);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .glow {
+      font-size: 120px;
+      color: #fff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    .glow2 {
+      padding-top: 50px;
+      font-size: 60px;
+      color: #fff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 30px #2a743d, 0 0 40px #2a743d, 0 0 50px #2a743d, 0 0 60px #2a743d, 0 0 70px #2a743d;
+
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #83e69b, 0 0 50px #83e69b, 0 0 60px #83e69b, 0 0 70px #83e69b, 0 0 80px #83e69b ;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="glow">cawebdev</h1>
+  <h3 class="glow2">Future frontend developer</h3>
+</body>
+</html>
