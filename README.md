@@ -1,3 +1,4 @@
 # 30-days-of-code
-# 1 Sticky navbar
+# 1 sticky navbar
 # 2 text-glow
+# 3 calculator
