@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #aec6f7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+}
+.card {
+  width: 400px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 7px 7px   #333;
+  border-radius: 8px;
+}
+.card .card-header {
+  height: 150px;
+  position: relative;
+}
+.card .card-header .waves-container {
+  height: 100%;
+}
+.card .card-header .waves-container .wave {
+  position: absolute;
+  width: 660px;
+  height: 660px;
+  background-image: linear-gradient(to bottom left, #baccf3, #5b81d1);
+  transform: translateX(-50%);
+}
+.card .card-header .waves-container .wave1 {
+  border-radius: 50%;
+  top: -330%;
+  left: 50%;
+  animation: spin 12s linear infinite;
+}
+.card .card-header .waves-container .wave2 {
+  border-radius: 46%;
+  top: -332%;
+  left: 48%;
+  animation: spin 14s linear infinite;
+}
+.card .card-header .waves-container .wave3 {
+  border-radius: 40%;
+  top: -328%;
+  left: 52%;
+  opacity: 0.2;
+  animation: spin 14s linear infinite;
+}
+@keyframes spin {
+  to{
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+.card .card-header .profile-img {
+  margin: 0 auto;
+  width: 120px;
+  height: 150px;
+  border: 2px solid rgb(40, 134, 134);
+  box-shadow: 0 7px 7px   #333;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .card-body {
+  margin-top: 100px;
+  text-align: center;
+  padding: 0 20px;
+}
+.card .card-body {
+  text-transform: capitalize;
+  color: rgb(40, 134, 134);
+}
+.card .card-body p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin: 20px 0;
+}
+.card .card-body .btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #5b86e5;
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin: 20px 0 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 7px 7px   #333;
+}
+
+
