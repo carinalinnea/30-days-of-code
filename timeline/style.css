@@ -57,7 +57,7 @@ body {
   border-radius: 50%;
   background-color: #7ce66f;
   top: 50%;
-  transform: translatey(-50%);
+  transform: translateY(-50%);
 }
 .section-timeline .timeline .row.left .event::before {
   right: -40px;
@@ -76,11 +76,38 @@ body {
   z-index: -1;
 }
 .section-timeline .timeline .row.left .event::after {
-  right: -5px;
-  border-radius: 5px;
+  right: -3px;
 }
 .section-timeline .timeline .row.right .event::after {
-  left: -20px;
-  border-radius: 5px;
+  left: -17px;
 }
+.section-timeline .timeline .row .event h3 {
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  font-size: 25px;
+}
+.section-timeline .timeline .row .event p {
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .section-timeline .timeline::before {
+    left: 20px;
+  }
+  .section-timeline .timeline .row .event {
+    width: 100%;
+    margin-left: 50px;
+  }
+  .section-timeline .timeline .row:not(:last-child) .event {
+    margin-bottom: 50px;
+  }
+  .section-timeline .timeline .row.left .event::before {
+    left: -40px;
+  }
+  .section-timeline .timeline .row.left .event::after {
+    left: -18px;
+  }
+}
+
 
