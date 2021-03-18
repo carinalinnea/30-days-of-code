@@ -7,3 +7,4 @@
 # 6 social media buttons
 # 7 curtain menu
 # 8 hex color code
+# 9 scroll image
