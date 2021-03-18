@@ -6,3 +6,4 @@
 # 5 profile-card
 # 6 social media buttons
 # 7 curtain menu
+# 8 hex color code
