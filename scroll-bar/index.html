@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Scroll bar</title>
+</head>
+<body>
+  <div class="header">
+    <h2>Scroll bar</h2>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus iure sunt atque deleniti voluptas illum veritatis minima in, blanditiis, quo, explicabo ad? Quis maxime ut debitis beatae exercitationem eligendi dolores et molestias facere, aperiam porro alias delectus quod commodi iure amet perferendis cum nemo repellendus voluptatibus velit necessitatibus. Dolorem.</p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium placeat aliquam, similique ab aut molestias blanditiis magnam? Quam unde eos aperiam aliquam harum obcaecati saepe dolore distinctio ipsa. Mollitia.
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur est totam necessitatibus numquam unde accusantium ullam sapiente, consectetur reprehenderit eaque sint modi non provident, alias, quos ducimus illum asperiores repudiandae blanditiis exercitationem. Delectus repudiandae voluptatum molestiae, quae, nam officiis id saepe fugiat provident rerum reiciendis ratione officia eum. Doloremque, animi.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, in consequuntur neque magni est nesciunt dolorum enim obcaecati assumenda reiciendis quam alias eos reprehenderit? Commodi sed nisi obcaecati. Tenetur, ipsum!
+    </p>
+  </div>
+
+  <script>
+    window.onscroll = function() {
+      myFunction()
+    }
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+</body>
+</html>
