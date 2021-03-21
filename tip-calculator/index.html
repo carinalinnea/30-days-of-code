@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip Calculator
+
+  </title>
+</head>
+<body>
+  <div class="app">
+    <h2>Tip Calculator</h2>
+  
+    Enter the bill amount of your meal: kronor
+      <input type="text" id="bill">
+      <br>
+    Tip Percentage: 
+      <input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill');">
+    <span id="slideval">0%</span>
+
+    <h3>Tip to leave = <span id="tip"></span></h3>
+    
+  </div>
+
+  <script>
+    function tipCalculate(slider, bill) {
+      var tip = document.getElementById('tip');
+      var slideval = document.getElementById('slideval');
+      var bill = document.getElementById('bill').value;
+      var prcnt = slider * .01;
+      
+      tip.innerHTML = (bill * prcnt).toFixed(2) + " kr";
+      slideval.innerHTML = slider + "%"
+    }
+  </script>
+  
+</body>
+</html>
