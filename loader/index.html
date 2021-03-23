@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Loader</title>
+</head>
+<body>
+  <div class="loader">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+  <section class="main">
+    <h1>Wälkommen till cawebdev</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut dolores velit dolorum, mollitia, harum magnam praesentium quaerat illum ratione nostrum asperiores, hic repellat illo impedit qui est modi.</p>
+    <a href="#" class="btn">Läs mer om oss här</a>
+  </section>
+
+  <script>
+
+    const loader = document.querySelector('.loader');
+    const main = document.querySelector('.main');
+
+    function init() {
+      setTimeout (() => {
+        loader.style.opacity = 0;
+        loader.style.display = 'none';
+
+        main.style.display = 'block';
+        main.style.opacity = 1;
+      }, 4000)
+    }
+    init()
+
+  </script>
+</body>
+</html>
