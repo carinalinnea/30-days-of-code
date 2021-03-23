@@ -12,3 +12,4 @@
 # 11 scroll bar
 # 12 tip-calculator
 # 13 hover-button
+# loader
