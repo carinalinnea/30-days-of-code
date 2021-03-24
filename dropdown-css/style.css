@@ -1,0 +1,27 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(./img//bjorklov.jpg);
+  background-size: cover;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 50px 200px;
+  font-size: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #9fec39;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(139, 187, 209, 0.52);
+  color: #bd1f0a;
+  padding: 20px 25px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
