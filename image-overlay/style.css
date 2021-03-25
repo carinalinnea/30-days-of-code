@@ -1,0 +1,79 @@
+body {
+  background: rgb(196, 235, 235);
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  color: #333;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 350px;
+  background: url(./img/hallarna.jpg) center / cover;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+.layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+.text {
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+  transform: translateY(200px);
+  transition: 1s;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text h4 {
+  margin-bottom: 0;
+  color: #686464;
+}
+.text p {
+  font-size: 0.8rem;
+  padding: .3rem;
+  color: #686464;
+  margin-top: 0.1rem;
+}
+.container:hover .layer .text{
+  transform: translateY(0);
+}
+.layer span {
+  display: block;
+  width: 50px;
+  height: 100px;
+  background: #fff;
+  transform: translateY(200px);
+  transition: .4s;
+}
+.layer span:nth-child(1) {
+  transition-delay: .1s;
+}
+.layer span:nth-child(2) {
+  transition-delay: .2s;
+}
+.layer span:nth-child(3) {
+  transition-delay: .3s;
+}
+.layer span:nth-child(4) {
+  transition-delay: .4s;
+}
+.layer span:nth-child(5) {
+  transition-delay: .5s;
+}
+.layer span:nth-child(6) {
+  transition-delay: .6s;
+}
+.container:hover .layer span {
+  transform: translateY(0);
+}
