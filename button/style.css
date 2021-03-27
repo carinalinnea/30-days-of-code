@@ -1,0 +1,50 @@
+body {
+  background-color: #d5dbbc;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  text-decoration: none;
+  color: #526839;
+  padding: 16px 48px;
+  border: 2px solid #526839;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s;
+  border-radius: 10px;
+}
+.btn span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  background-color: #8d8fb1;
+  border-radius: 50% 50% 0 0;
+  transform: translateY(150%);
+  transition: all 0.3s;
+  z-index: -1;
+}
+.btn span:nth-child(1) {
+  left: 0;
+}
+.btn span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.1s;
+}
+.btn span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.2s;
+}
+.btn span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.3s;
+}
+.btn:hover span {
+  transform: translateY(0) scale(2);
+}
+.btn:hover {
+  color: #fff;
+}
