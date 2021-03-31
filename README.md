@@ -20,3 +20,4 @@
 # 19 hamburger-animation
 # 20 grid
 # 21 tic-tac-toe
+# 22 spinner
