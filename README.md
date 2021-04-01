@@ -21,3 +21,4 @@
 # 20 grid
 # 21 tic-tac-toe
 # 22 spinner
+# 23 dice
