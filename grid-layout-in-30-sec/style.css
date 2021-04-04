@@ -1,0 +1,45 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas:
+    "header header header header"
+    "aside main main aside2"
+    "aside main main aside2"
+    "footer footer footer footer";
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+div {
+  border: 1px solid black;
+  min-height: 100px;
+  text-align: center;
+}
+
+.header { grid-area: header;
+  background: rgb(120, 182, 161);
+}
+
+.aside { grid-area: aside;
+  background: rgb(84, 128, 113); 
+}
+
+.aside2 { grid-area: aside2;
+  background: rgb(159, 241, 214); 
+}
+
+.main { grid-area: main;
+  background: rgb(79, 226, 177); 
+}
+
+.footer { grid-area: footer;
+  background: rgb(200, 233, 222); 
+}
