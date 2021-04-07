@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.click').click(function() {
+        $('.popup_box').css({
+          'opacity': '1', 'pointer-events': 'auto'
+        }); 
+      });
+      $('.btn1').click(function() {
+        $('.popup_box').css({
+          'opacity': '0', 'pointer-events': 'none'
+        });
+      });
+      $('.btn2').click(function() {
+        $('.popup_box').css({
+          'opacity': '0', 'pointer-events': 'none'
+        });
+        alert('Vi har tagit bort ditt konto!');
+        $('.click').text('Ditt konto är borta');
+      });
+    });
+  </script>
+
+
+  <link rel="stylesheet" href="style.css">
+  <title>alert-box</title>
+</head>
+<body>
+  <a href="#" class="click">Click me</a>
+  <div class="popup_box">
+    <i class="fas fa-exclamation"></i>
+    <h1>Vi kommer att ta bort ditt konto!</h1>
+    <label>Är du säker?</label>
+    <div class="btns">
+      <a href="#" class="btn1">Ångra</a>
+      <a href="#" class="btn2">Ta bort mitt konto</a>
+
+    </div>
+  </div>
+</body>
+</html>
