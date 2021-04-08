@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(199, 233, 245);
+  /* height: 100vh; */
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.flexbox-container {
+  /* height: 600px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.flexbox-item {
+  width: 100px;
+  margin: 10px;
+  border: 1px solid rgb(51, 80, 67);
+  background-color: rgb(134, 207, 173);
+  border-radius: 10%;
+}
+.flexbox-item-1 {
+  min-height: 50px;
+}
+.flexbox-item-2 {
+  min-height: 100px;
+}
+.flexbox-item-3 {
+  min-height: 150px;
+}
+.flexbox-item-4 {
+  min-height: 75px;
+}
+.flexbox-item-5 {
+  min-height: 35px;
+}
+.flexbox-item-6 {
+  min-height: 125px;
+}
+.flexbox-item-7 {
+  min-height: 55px;
+}
+.flexbox-item-8 {
+  min-height: 130px;
+}
+.flexbox-item-9 {
+  min-height: 120px;
+}
+
